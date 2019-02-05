@@ -95,6 +95,7 @@
 </head>
 <body>
 
+  <!-- NAVIGATION -->
   <nav>
     <div>logo</div>
     <div class="navLink active" data-showpage="profile">profile</div>
@@ -102,17 +103,29 @@
     <div class="navLink">logout</div>
   </nav>
 
+
+  <!-- PAGES -->
   <div id="home" class="page">HOME</div>
+
   <div id="profile" class="page">
     <div>User name: <span id="lblName"></span></div>
     <div>User name: <span id="lblLastName"></span></div>
     <div>User active: <span id="lblActive"></span></div>
   </div>
+
   <div id="accounts" class="page">ACCOUNTS</div>
+
   <div id="login" class="page">LOGOUT</div>
+
+  <!-- SCRIPTS -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
+
+    // $(window).on('load', function(){
+    //   $("div#profile").removeClass("hidden")
+    //   console.log("show profile")
+    // })
 
     // this data will come from the server
     let jUser = {
@@ -143,6 +156,7 @@
     let jApp = {
       "fnHideAllPages": function(){
         $(".page").hide();
+        $("#profile").show();
       }
     }
     
