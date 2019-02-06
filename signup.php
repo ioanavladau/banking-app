@@ -1,14 +1,17 @@
 <?php
   // check if the data is valid
   // echo $_POST['txtSignupName'] ?? "You did not post anything";
-  $sSignupName = $_POST['txtSignupName'];
-  // validate the name
-  if( sizeof($sSignupName) >=2 && sizeof($sSignupName) <= 10){
-    // save it to the file
-    // take the user to the success page
-    header('Location: signup-ok.php');
-  } else{
-    header('Location: signup-error.php');
+
+  if(isset($_POST['txtSignupName'])){
+    $sSignupName = $_POST['txtSignupName'];
+    // validate the name
+    if( strlen($sSignupName) >=2 && strlen($sSignupName) <= 10){
+      // save it to the file
+      // take the user to the success page
+      header('Location: signup-ok.php');
+    } else{
+      header('Location: signup-error.php');
+    }
   }
 ?>
 
