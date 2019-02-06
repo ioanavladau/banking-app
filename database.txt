@@ -1,0 +1,30 @@
+{
+  "name": "BANK FOR LAUNDRY MONEY",
+  "address": "Lygten 37",
+  "clients": [
+    {
+      "id": "lja979347",
+      "name": "A",
+      "lastName": "B"},
+    {
+      "id": "asd2432",
+      "name": "X",
+      "lastName": "Y"
+    },
+    {
+      "id": "asdasdasdas",
+      "name": "Xa",
+      "lastName": "Ya"
+    },
+    {
+      "id": "asd24etreter32",
+      "name": "Xb",
+      "lastName": "Yb"
+    },
+    {
+      "id": "asd2erter432",
+      "name": "Xc",
+      "lastName": "Yc"
+    }
+  ]
+}

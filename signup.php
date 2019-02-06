@@ -6,7 +6,9 @@
     $sSignupName = $_POST['txtSignupName'];
     // validate the name
     if( strlen($sSignupName) >=2 && strlen($sSignupName) <= 10){
-      // save it to the file
+      // save name to the file
+      file_put_contents("database.txt", $sSignupName);
+
       // take the user to the success page
       header('Location: signup-ok.php');
     } else{
