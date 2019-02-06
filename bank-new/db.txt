@@ -1,5 +1,0 @@
-{
-  "name": "BANK FOR LAUNDRY MONEY",
-  "address": "Lygten 37",
-  "clients": []
-}

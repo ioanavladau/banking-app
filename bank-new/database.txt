@@ -1,1 +1,0 @@
-{"name":"BANK FOR LAUNDRY MONEY","address":"Lygten 37","clients":[{"id":"5c5ad3d51e793","name":"ioana"},{"id":"5c5ad3ddf1130","name":"marija"}]}
