@@ -1,5 +1,1 @@
-{
-  "name": "BANK FOR LAUNDRY MONEY",
-  "address": "Lygten 37",
-  "clients": []
-}
+{"name":"BANK FOR LAUNDRY MONEY","address":"Lygten 37","clients":[{"id":"5c5ad4bf0fa5a","name":"AAA","lastName":"BBB"}]}
