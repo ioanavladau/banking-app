@@ -16,24 +16,18 @@ $("form").submit(function(){
 
     switch(sDataType) {
       case "string":
-        // console.log("Validating a string");
         if( $(this).val().length < iMin || $(this).val().length > iMax ){
           $(this).addClass('invalid');
           bErrors = true;
         }
-        // console.log('the input must be at least', iMinLength, 'cha.')
-        // console.log('the input cannot be longer than', iMaxLength, 'cha.')
       break;
       case "integer":
-        // console.log("Validating an integer");
         if( Number($(this).val()) < iMin || Number($(this).val()) > iMax ){
-          // console.log("it is NOT between")
           $(this).addClass('invalid');
           bErrors = true;
         }
       break;
       case "email":
-        // console.log("Validating an email");
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         
         if( $(this).val().length < iMin || $(this).val().length > iMax  || re.test(String($(this).val()).toLowerCase()) == false ){
@@ -50,11 +44,10 @@ $("form").submit(function(){
   })
 
   // if any of the inputs have classes
-  if( $(this).children().hasClass('invalid') ) { return false }
+  // if( $(this).children().hasClass('invalid') ) { return false }
   // chaining . . .
 
-  // if (bErrors == false) return true;
-  // return false;
+  if (bErrors == true) return false;
 });
 
 

@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> <?php echo $sSessionEmail; ?>  </title>
+  <title> <?php echo $sTitle ?>  </title>
   <link rel="stylesheet" type="text/css" href="app.css">
 
-  <?php echo $sLinkToCss ?? ''; ?>
-  <?php echo $sAlert ?? ''; ?>
+  <?= $sLinkToCss ?? ''; ?>
 
 </head>
 <body>

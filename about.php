@@ -1,6 +1,6 @@
 <?php
   $sTitle = 'About';
-  $sLinkToCss = "<link rel='stylesheet' href='about.css'>";
+  // $sLinkToCss = "<link rel='stylesheet' href='about.css'>";
   $sLinkToJs = "<script src='about.js'></script>";
   // <?= $sLinkToCss 
   require_once 'top.php';
