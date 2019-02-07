@@ -32,7 +32,7 @@ $("form").submit(function(){
         // console.log("Validating an integer");
         if( Number($(this).val()) < iMin || Number($(this).val()) > iMax ){
           // console.log("it is NOT between")
-          $(this).addClass('invalid')
+          $(this).addClass('invalid');
           bErrors = true;
         }
       break;
