@@ -18,6 +18,7 @@
     <input type="text" placeholder="username" data-validate="yes" data-type="string" data-min="2" data-max="20">
     <input type="text" placeholder="name" data-validate="yes" data-type="string" data-min="2" data-max="20">
     <input type="text" placeholder="price" data-validate="yes" data-type="integer" data-min="2" data-max="8888">
+    <input type="text" placeholder="email" data-validate="yes" data-min="6" data-max="300" data-type="email">
     <button>validate form one</button>
   </form>
 
