@@ -8,5 +8,6 @@
 </head>
 <body>
   <h1>SIGNUP ERROR</h1>
+    <a href="signup.php">Sign up again</a>
 </body>
 </html>

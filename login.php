@@ -1,24 +1,23 @@
-<?php 
+<?php
 
   if(isset($_POST['txtLoginEmail']) && isset($_POST['txtLoginPassword'])){
     // echo $_POST['txtLoginEmail'];
     // echo $_POST['txtLoginPassword'];
-
     // $sCorrectEmail = "a@a.com";
     // $sCorrectPassword = "111";
 
-    $sData = file_get_contents("database.txt");
+    $sData = file_get_contents('database.txt');
     $jData = json_decode($sData);
 
     foreach($jData->clients as $jClient){
       // check if the user name and password exist n the database
       if( $jClient->email == $_POST['txtLoginEmail'] && 
           $jClient->password == $_POST['txtLoginPassword']
-        ) {
-            // echo 'OK, you are logged in';
-            session_start(); // WE MUST HAVE THIS TO USE SESSIONS
-            $_SESSION['email'] = $_POST['txtLoginEmail'];
-            header('Location: profile.php');
+        ){
+          // echo 'OK, you are logged in';
+          session_start(); // WE MUST MUST MUST HAVE THIS TO USE SESSIONS
+          $_SESSION['email'] = $_POST['txtLoginEmail'];
+          header('Location: profile.php');
         }
     }
 

@@ -8,5 +8,7 @@
 </head>
 <body>
   <h1>SIGNUP OK</h1>
+  <a href="signup.php">Sign up again</a>
+  <a href="view-customers.php">VIew customers</a>
 </body>
 </html>

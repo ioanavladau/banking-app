@@ -1,8 +1,6 @@
 // console.log("validate.js linked");
-let bErrors = false;
-
-
 $("form").submit(function(){
+  let bErrors = false;
   // console.log("validating");
   // How do I know which elements in the form I want to validate?
   // How do I select all the data-validate="yes" from the form
@@ -17,7 +15,6 @@ $("form").submit(function(){
     let iMax = $(this).attr('data-max');
 
     switch(sDataType) {
-
       case "string":
         // console.log("Validating a string");
         if( $(this).val().length < iMin || $(this).val().length > iMax ){
@@ -27,7 +24,6 @@ $("form").submit(function(){
         // console.log('the input must be at least', iMinLength, 'cha.')
         // console.log('the input cannot be longer than', iMaxLength, 'cha.')
       break;
-
       case "integer":
         // console.log("Validating an integer");
         if( Number($(this).val()) < iMin || Number($(this).val()) > iMax ){
@@ -36,28 +32,15 @@ $("form").submit(function(){
           bErrors = true;
         }
       break;
-
       case "email":
         // console.log("Validating an email");
-        $sEmail = $(this).val();
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         
         if( $(this).val().length < iMin || $(this).val().length > iMax  || re.test(String($(this).val()).toLowerCase()) == false ){
           $(this).addClass('invalid');
           console.log("email NOT valid");
           bErrors = true;
-        } else {
-          console.log("email VALID");
         }
-
-
-        // if(validateEmail($sEmail)){
-        //   console.log("email is valid");
-        // } else {
-        //   $(this).addClass('invalid');
-        //   console.log("email is NOT valid");
-        // }
-
       break;
 
       default:
@@ -67,11 +50,11 @@ $("form").submit(function(){
   })
 
   // if any of the inputs have classes
-  // if( $(this).children().hasClass('invalid') ) { return false }
+  if( $(this).children().hasClass('invalid') ) { return false }
   // chaining . . .
 
-  if (bErrors == false) return true;
-  return false;
+  // if (bErrors == false) return true;
+  // return false;
 });
 
 
