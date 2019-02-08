@@ -16,7 +16,14 @@
         ){
           // echo 'OK, you are logged in';
           session_start(); // WE MUST MUST MUST HAVE THIS TO USE SESSIONS
-          $_SESSION['email'] = $_POST['txtLoginEmail'];
+          // $_SESSION['email'] = $_POST['txtLoginEmail'];
+          // $_SESSION['active'] = $jClient->active;
+
+          // For security, DO NOT have the pwd in the jClient
+          // $jClient->password = '';
+          unset($jClient->password);
+          $_SESSION['jClient'] = $jClient;
+
           header('Location: profile.php');
         }
     }

@@ -27,6 +27,8 @@
         echo "id matches address bar";
         // flip the active key to 0
         $jClient->active = ! $jClient->active;
+        session_start();
+        $_SESSION['active'] = $jClient->active;
         // convert the json back to text
         $sFinalData = json_encode($jData);
         // save thhe data back to the file - file_put_contents('database.txt')
