@@ -28,11 +28,18 @@
     <button>send money</button>
   </form>
 
+  <form action="change-phone-number.php" method="POST">
+    <input name="txtNewPhoneNumber" type="text" placeholder="new phone number">
+    <button>change phone</button>
+  </form>
+
   <h1>Profile</h1>
 
-  <?php echo json_encode($_SESSION)?>
+  <a href="logout.php">Logout</a>
 
-  <?php echo $_SESSION['jClient']->active?>
+  <h1>Amount available: <?php echo $_SESSION['jClient']->amount?></h1>
+
+  <?php echo json_encode($_SESSION)?>
 
   <?php 
   

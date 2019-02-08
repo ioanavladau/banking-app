@@ -32,6 +32,9 @@
       // $jClient->amount = $jClient->amount - $iAmount; // old amount - whatever we place in the amount
       $jClient->amount -= $iAmount;
       // echo json_encode($jData);
+
+      // update session!!!
+      $_SESSION['jClient']->amount = $jClient->amount;
     }
 
     // check the destination user by phone
