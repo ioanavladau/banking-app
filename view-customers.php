@@ -42,7 +42,7 @@
       echo "<div class='client'>
               <div>id: $jClient->id</div>
               <div>name: $jClient->name</div>
-              <a href='block-customer.php?id=$jClient->id'>$sWord</a>
+              <a href='block-or-unblock-customer.php?id=$jClient->id'>$sWord</a>
             </div>";
     }
 ?>
