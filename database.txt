@@ -5,23 +5,26 @@
     {
       "id": "1",
       "name": "A",
-      "lastName":"AA",
-      "email":"a@a.com",
-      "password":"111"
+      "lastName": "AA",
+      "email": "a@a.com",
+      "password": "111",
+      "active": 1
     },
     {
       "id": "2",
       "name": "B",
-      "lastName":"BB",
-      "email":"b@b.com",
-      "password":"222"
+      "lastName": "BB",
+      "email": "b@b.com",
+      "password": "222",
+      "active": 0
     },
     {
       "id": "3",
       "name": "C",
-      "lastName":"CC",
-      "email":"c@c.com",
-      "password":"333"
+      "lastName": "CC",
+      "email": "c@c.com",
+      "password": "333",
+      "active": 1
     }
   ]
 }
