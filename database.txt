@@ -1,1 +1,53 @@
-{"name":"AAAA","address":"BBBBB","clients":[{"id":"1","name":"A","lastName":"AA","email":"a@a.com","password":"111","phone":"999","active":false,"amount":-26},{"id":"2","name":"B","lastName":"BB","email":"b@b.com","password":"222","phone":"222","active":true,"amount":46},{"id":"3","name":"C","lastName":"CC","email":"c@c.com","password":"333","phone":"333","active":true,"amount":40}]}
+{
+  "name": "AAAA",
+  "address": "BBBBB",
+  "clients": [
+    {
+      "id": "1",
+      "name": "A",
+      "lastName": "AA",
+      "email": "a@a.com",
+      "password": "111",
+      "phone": "999",
+      "active": false,
+      "amount": -26,
+      "transactions": [
+        {
+          "id": "oiurwe9r99384",
+          "toPhone": 222,
+          "amount": 1095,
+          "date": 1549630039,
+          "success": 1,
+          "actualAmount": 900,
+          "message": "Thank you for last night!"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "B",
+      "lastName": "BB",
+      "email": "b@b.com",
+      "password": "222",
+      "phone": "222",
+      "active": true,
+      "amount": 46,
+      "transactions": [
+        {}
+      ]
+    },
+    {
+      "id": "3",
+      "name": "C",
+      "lastName": "CC",
+      "email": "c@c.com",
+      "password": "333",
+      "phone": "333",
+      "active": true,
+      "amount": 40,
+      "transactions": [
+        {}
+      ]
+    }
+  ]
+}
